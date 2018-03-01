@@ -5,26 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="light">
   <main>
     <header>
       <nav>
-        <a href="#">Sign In</a>
+        <ul>
+          <li>
+            <a href="#">Sign In</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <article>
       <section id="login">
-        <form action="#">
-          <input type="text" name="username" id="username">
-          <input type="password" name="password" id="password">
+        <form action="#" class="login">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="Please enter your username...">
+
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Please enter your password...">
+
+          <div class="inline-controls">
+            <label for="remember">Remember Me</label>
+            <input type="checkbox" name="remember" id="remember">
+          </div>
+
+          <button class="pull-right signin" type="submit" disabled="disabled">Sign in</button>
         </form>
       </section>
     </article>
-    <aside>
-      <p>
-        Some relevant block goes here, like a registration form.
-      </p>
+
+    <!-- Modal time -->
+    <aside class="modal modal-container">
+      <header>
+
+      </header>
+      <section class="modal modal-body">
+        <p>
+          Some relevant block goes here, like a registration form.
+        </p>
+      </section>
+      <footer class="modal modal-footer">
+
+      </footer>
     </aside>
   </main>
   <script src="./js/main.js"></script>
