@@ -60,13 +60,19 @@ button.signin{
   border-radius:2px; /* Soften those corners. We don't want to cut anyone. We must use this power responsibly. */
 }
 
-button.signin[disabled="disabled"]{
+button.signin[disabled]{
   cursor: not-allowed;
   background-color:grey;
 }
 
-/* This will function, would probably explore different layout systems ie: grid / flexbox for the form normally. May be overkill though. */
+/* This will function, would probably explore different layout systems
+  ie: grid / flexbox for the form normally. May be overkill though.
+*/
 .pull-right{
   float:right;
   clear: both;
+}
+
+.modal{
+  display:none;
 }

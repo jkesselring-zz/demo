@@ -32,20 +32,22 @@
             <input type="checkbox" name="remember" id="remember">
           </div>
 
-          <button class="pull-right signin" type="submit" disabled="disabled">Sign in</button>
+          <button id="signin" class="pull-right signin" type="submit" disabled="disabled">Sign in</button>
         </form>
       </section>
     </article>
 
-    <!-- Modal time -->
+    <!-- Modal time
+      If we wanted to, we could create a login form component and change the action to switch from login to register.
+      Likely, we'd want to do that either in a side by side panel layout or through a modal. I've been on a modal kick
+      recently, so I highlighted it below.
+    -->
     <aside class="modal modal-container">
       <header>
-
+        Registration
       </header>
       <section class="modal modal-body">
-        <p>
-          Some relevant block goes here, like a registration form.
-        </p>
+        <login-form action.bind="/registration"></login-form>
       </section>
       <footer class="modal modal-footer">
 
